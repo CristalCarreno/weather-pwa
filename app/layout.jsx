@@ -15,10 +15,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
-      <head>
-        <link rel="manifest" href="/manifest.json" />
-      </head>
+    <html lang="es" suppressHydrationWarning>
       <body className="bg-[#0b1329] text-white min-h-screen antialiased">
         {children}
       </body>
